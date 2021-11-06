@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { Avatar } from '@minded/ui-components';
-import {
-  CalendarIcon,
-  NotificationIcon,
-} from '@minded/insights-app/components/Icons';
+import { CalendarIcon, NotificationIcon } from '@minded/ui-components';
 
 const StyledTopNav = styled.div`
   background: var(--color-backgrounds-cream);

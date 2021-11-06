@@ -1,3 +1,4 @@
+export * from './lib/Icons';
 export * from './lib/nav-menu-item/nav-menu-item';
 export * from './lib/container/container';
 export * from './lib/avatar/avatar';

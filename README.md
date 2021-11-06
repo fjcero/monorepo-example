@@ -21,6 +21,7 @@ This project was generated using [Nx](https://nx.dev).
 - [ ] Add stories to `ui-components`
 - [ ] Add spec tests to `ui-components`
 - [ ] Consider definition of e2e and cypress tests at app level
+- [ ] State management using React hooks (Redux style)
 
 ## App Structure
 

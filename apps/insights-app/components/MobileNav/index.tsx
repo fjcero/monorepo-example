@@ -1,10 +1,11 @@
-import { BottomNav, NavMenuItem } from '@minded/ui-components';
-import styled from 'styled-components';
 import {
+  BottomNav,
   BulbIcon,
   CalendarIcon,
   ChatIcon,
-} from '@minded/insights-app/components/Icons';
+  NavMenuItem,
+} from '@minded/ui-components';
+import styled from 'styled-components';
 
 const StyledMobileNav = styled.div`
   color: white;
