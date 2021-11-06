@@ -1,0 +1,29 @@
+{
+  "root": "apps/insights-app-e2e",
+  "sourceRoot": "apps/insights-app-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/insights-app-e2e/cypress.json",
+        "devServerTarget": "insights-app:serve",
+        "tsConfig": "apps/insights-app-e2e/tsconfig.json"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "insights-app:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/insights-app-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["insights-app"]
+}
