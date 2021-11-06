@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "insights-app": "apps/insights-app",
-    "insights-app-e2e": "apps/insights-app-e2e"
+    "insights-app-e2e": "apps/insights-app-e2e",
+    "ui-components": "libs/ui-components"
   }
 }

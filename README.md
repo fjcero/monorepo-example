@@ -1,35 +1,54 @@
-
-
 # MonorepoTemplate
 
 This project was generated using [Nx](https://nx.dev).
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+## POC checkilist
 
-🔎 **Smart, Extensible Build Framework**
+- [x] Setup Monorepo with Nx
+- [x] Install NextJS with Typescript support
+- [x] Support for `styled-components` 
+- [x] Shared `ui-components`
+- [x] Storybook configuration for existent components
+- [x] Install main React dependencies: `react-query`, `formik`
+- [x] Absolute paths for apps in `tsconfig.base.json` (`@minded/insights-app/components/TopNav`)
+- [ ] Support for NextJS Dynamic routing to redirect Experiments
+- [ ] Microfrontends POC: embed app within another
+- [ ] Deployment with Jenkins (github actions)
+- [ ] PWA configuration
+- [ ] Consider Tailwind as addition of `styled-components`
+- [ ] Document `nx` code generators to maximize reusability and structure
+- [ ] Deploy using Jenkins or Github Actions
+- [ ] Add stories to `ui-components`
+- [ ] Add spec tests to `ui-components`
+- [ ] Consider definition of e2e and cypress tests at app level
 
-## Adding capabilities to your workspace
+## App Structure
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+- UI Components
+  - Navbar
+  - Bottom navbar (mobile)
+  - Calendar
+  - Notifications (push nots?)
+- New `insights-app`
+  - Treatment plan (current prescriptions)
+  - Daily insights (education)
+- New `discussions-app`
+  - Secret Chats
+- New `daily-notes`
+  - Edit text
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+## Tech Stack
 
-Below are our core plugins:
+- Nx (Nrwl)
+- Storybook
+- NextJS
+- React
+- React Query
+- Styled Components
+- Formik
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+
 
 ## Generate an application
 
@@ -45,7 +64,35 @@ Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are shareable across libraries and applications. They can be imported from `@monorepo-template/mylib`.
+Libraries are shareable across libraries and applications. They can be imported from `@minded/mylib`.
+
+## Setup
+
+`npx nx serve insights-app`
+`npx nx dep-graph`
+
+Create a new React App
+`npx nx g @nwrl/react:app <app_name>`
+
+Create a new NextJS app
+`npx nx g @nrwl/next:app <app_name>`
+
+Create a new React Component lib
+`npx nx g @nwrl/react:lib ui-components`
+
+Create new component 
+`npx nx g @nrwl/react:component BottomNav --project=ui-components --style=styled-components --export`
+
+## Storybook
+
+Run storybook
+`npx nx run ui-components:storybook`
+
+Add Storybook config to a app or lib
+`nx g @nrwl/react:storybook-configuration <project-name>`
+
+Autogenerate stories
+`nx g @nrwl/react:stories <project-name>`
 
 ## Development server
 
@@ -75,20 +122,9 @@ Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 
 Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
-## Further help
 
-Visit the [Nx Documentation](https://nx.dev) to learn more.
+## Learning resources
 
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+- [Egghead React Course](https://egghead.io/courses/scale-react-development-with-nx-4038)
+- Visit the [Nx Documentation](https://nx.dev) to learn more.
+- https://blog.nrwl.io/build-your-design-system-with-storybook-nx-e3bde4087ad8
