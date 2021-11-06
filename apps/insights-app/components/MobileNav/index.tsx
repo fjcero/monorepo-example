@@ -1,5 +1,10 @@
 import { BottomNav, NavMenuItem } from '@minded/ui-components';
 import styled from 'styled-components';
+import {
+  BulbIcon,
+  CalendarIcon,
+  ChatIcon,
+} from '@minded/insights-app/components/Icons';
 
 const StyledMobileNav = styled.div`
   color: white;
@@ -15,9 +20,18 @@ const StyledMobileNav = styled.div`
 export const MobileNav = () => (
   <BottomNav>
     <StyledMobileNav>
-      <NavMenuItem>Today</NavMenuItem>
-      <NavMenuItem>Insights</NavMenuItem>
-      <NavMenuItem>Secret chat</NavMenuItem>
+      <NavMenuItem>
+        <CalendarIcon />
+        Today
+      </NavMenuItem>
+      <NavMenuItem>
+        <BulbIcon />
+        Insights
+      </NavMenuItem>
+      <NavMenuItem>
+        <ChatIcon />
+        Secret chat
+      </NavMenuItem>
     </StyledMobileNav>
   </BottomNav>
 );

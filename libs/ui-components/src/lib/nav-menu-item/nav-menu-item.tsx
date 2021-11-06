@@ -12,9 +12,9 @@ const StyledNavMenuItem = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
 
-  > div {
-    background: white;
+  > svg {
     height: 20px;
     width: 20px;
     margin-bottom: 4px;
@@ -22,12 +22,7 @@ const StyledNavMenuItem = styled.div`
 `;
 
 export function NavMenuItem({ children, ...props }: NavMenuItemProps) {
-  return (
-    <StyledNavMenuItem>
-      <div></div>
-      {children}
-    </StyledNavMenuItem>
-  );
+  return <StyledNavMenuItem>{children}</StyledNavMenuItem>;
 }
 
 export default NavMenuItem;
