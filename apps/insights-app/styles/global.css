@@ -1,3 +1,46 @@
+:root {
+  /* Backgrounds */
+  --color-backgrounds-primary: #fffcf8;
+  --color-backgrounds-cream: #faf6f0;
+  --color-backgrounds-medium: #95938f;
+  --color-backgrounds-dark: #363533;
+  --color-backgrounds-black: #000000;
+  --color-backgrounds-light: #000000;
+
+  /* Texts */
+  --color-text-primary: #0f76d4;
+  --color-text-primary-rgb: 15, 118, 212, 1;
+  --color-text-dark: #004a9f;
+  --color-text-lightWithOpacity: #f9f9f9f0;
+  --color-text-lightWithAlpha: #fffcf899;
+  --color-text-skeleton: #ebf1f5;
+  --color-text-white: #ffffff;
+
+  /* Links */
+  --color-links-primary: #53b58c;
+  --color-links-dark: #00815d;
+  --color-links-dark: #bae1d1;
+
+  /* Controls */
+  --color-controls-primary: #f3bdd7;
+  --color-controls-dark: #682b49;
+  --color-controls-darkGrey: #682b4980;
+  --color-controls-grey: #682b494d;
+  --color-controls-light: #fae3eb;
+  --color-controls-hover: #cb98b1;
+
+  /* Accents */
+  --color-accent-primary: #f2dc6a;
+  --color-accent-dark: #f2dc6a;
+  --color-accent-light: #fbf1b9;
+  --color-accent-light: #d12136;
+}
+
+body,
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
     v4.0 | 20180602
     License: none (public domain)
@@ -88,7 +131,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /* font: inherit; */
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -192,4 +235,14 @@ td,
 input,
 textarea {
   user-select: text;
+}
+
+main.app {
+  /* height: 100vh; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* min-height: calc(100vh - var(--navbar-height) - var(--footer-height)); */
+  /* background-color: #1b1b1b; */
+  /* color: cyan; */
 }

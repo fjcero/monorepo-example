@@ -8,12 +8,9 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to insights-app!</title>
       </Head>
-      <div className="app">
-        <header className="flex" />
-        <main>
-          <Component {...pageProps} />
-        </main>
-      </div>
+      <main className="app">
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }

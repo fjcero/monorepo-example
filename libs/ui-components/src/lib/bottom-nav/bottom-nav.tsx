@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 /* eslint-disable-next-line */
-export interface BottomNavProps {}
+export interface BottomNavProps {
+  children: React.ReactNode;
+}
 
 const StyledBottomNav = styled.div`
-  color: pink;
+  display: grid;
+  align-self: end;
 `;
 
-export function BottomNav(props: BottomNavProps) {
-  return (
-    <StyledBottomNav>
-      <h1>Welcome to BottomNav!</h1>
-    </StyledBottomNav>
-  );
+export function BottomNav({ children }: BottomNavProps) {
+  return <StyledBottomNav>{children}</StyledBottomNav>;
 }
 
 export default BottomNav;
