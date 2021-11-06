@@ -14,6 +14,7 @@ This project was generated using [Nx](https://nx.dev).
 - [ ] Microfrontends POC: embed app within another
 - [ ] Support for NextJS Dynamic routing to redirect Experiments
 - [ ] State management using React hooks (Redux style)
+- [ ] Define Styled Components Theme
 - [ ] Deployment with Jenkins (github actions)
 - [ ] PWA configuration
 - [ ] Consider Tailwind as addition of `styled-components`
@@ -22,6 +23,7 @@ This project was generated using [Nx](https://nx.dev).
 - [ ] Add stories to `ui-components`
 - [ ] Add spec tests to `ui-components`
 - [ ] Consider definition of e2e and cypress tests at app level
+- [ ] Migrate existent components to this new Repository
 
 ## App Structure
 
@@ -41,15 +43,12 @@ This project was generated using [Nx](https://nx.dev).
 ## Tech Stack
 
 - Nx (Nrwl)
-- Storybook
-- NextJS
 - React
+- NextJS
+- Storybook
 - React Query
 - Styled Components
 - Formik
-
-
-
 
 ## Generate an application
 
