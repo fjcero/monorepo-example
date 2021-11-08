@@ -113,12 +113,16 @@ Navigate to http://localhost:4200/. The app will automatically reload if you cha
 ## Storybook
 
 #### Add Storybook config to a app or lib
-`nx g @nrwl/react:storybook-configuration <project-name>`
+```sh
+nx g @nrwl/react:storybook-configuration <project-name>
+`
 
 > This also regenerates `stories` for all components that don't have any defined
 
 #### Run storybook
-`npx nx run ui-components:storybook`
+```sh
+npx nx run ui-components:storybook
+`
 
 ## Build
 
