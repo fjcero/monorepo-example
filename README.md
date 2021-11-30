@@ -13,9 +13,11 @@ This project was generated using [Nx](https://nx.dev).
 - [x] Absolute paths for apps in `tsconfig.base.json` (`@minded/insights-app/components/TopNav`)
 - [ ] Microfrontends POC: embed app within another
 - [ ] Support for NextJS Dynamic routing to redirect Experiments
+- [ ] Feature Flag support with Optimizely
+- [ ] Test SSR component and route
 - [ ] State management using React hooks (Redux style)
 - [ ] Define Styled Components Theme
-- [ ] Deployment with Jenkins (github actions)
+- [ ] Deployment with Jenkins (github actions). Most likely to be k8s
 - [ ] PWA configuration
 - [ ] Consider Tailwind as addition of `styled-components`
 - [ ] Document `nx` code generators to maximize reusability and structure
