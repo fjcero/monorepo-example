@@ -35,7 +35,6 @@ This project was generated using [Nx](https://nx.dev).
   - Calendar
   - Notifications (push nots?)
 - New `insights-app`
-  - Treatment plan (current prescriptions)
   - Daily insights (education)
 - New `discussions-app`
   - Secret Chats
