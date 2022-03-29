@@ -1,7 +1,8 @@
 {
-  "name": "minded",
+  "name": "@fjcero/monorepo-example",
   "version": "0.0.0",
   "license": "MIT",
+  "author": "fjcero@gmail.com",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
