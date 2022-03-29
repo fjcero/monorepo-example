@@ -32,7 +32,7 @@ This project was generated using [Nx](https://nx.dev).
 - UI Components
   - Navbar
   - Bottom navbar (mobile)
-  - Calendar
+  - Journal
   - Notifications (push nots?)
 - New `insights-app`
   - Daily insights (education)
