@@ -10,22 +10,19 @@ This project was generated using [Nx](https://nx.dev).
 - [x] Shared `ui-components`
 - [x] Storybook configuration for existent components
 - [x] Install main React dependencies: `react-query`, `formik`
-- [x] Absolute paths for apps in `tsconfig.base.json` (`@minded/insights-app/components/TopNav`)
+- [x] Absolute paths for apps in `tsconfig.base.json`
 - [ ] Microfrontends POC: embed app within another
 - [ ] Support for NextJS Dynamic routing to redirect Experiments
 - [ ] Feature Flag support with Optimizely
 - [ ] Test SSR component and route
 - [ ] State management using React hooks (Redux style)
 - [ ] Define Styled Components Theme
-- [ ] Deployment with Jenkins (github actions). Most likely to be k8s
 - [ ] PWA configuration
 - [ ] Consider Tailwind as addition of `styled-components`
 - [ ] Document `nx` code generators to maximize reusability and structure
-- [ ] Deploy using Jenkins or Github Actions
-- [ ] Add stories to `ui-components`
-- [ ] Add spec tests to `ui-components`
-- [ ] Consider definition of e2e and cypress tests at app level
-- [ ] Migrate existent components to this new Repository
+- [ ] Docker container
+- [ ] Deployment with Github Actions
+- [ ] Playwright for E2E testing
 
 ## App Structure
 
